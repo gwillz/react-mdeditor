@@ -1,0 +1,7 @@
+build/
+node_modules/
+*.tar
+*.log
+.vscode
+*.tsbuildinfo
+demo/index.js

@@ -1,0 +1,54 @@
+{
+  "name": "react-remark-editor",
+  "version": "1.0.0",
+  "description": "React Markdown editor built with mdast/remark.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "prepare": "tsc",
+    "demo": "webpack --mode development --entry ./src/demo.js --output demo/index.js",
+    "serve": "node serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gwillz/react-remark-editor"
+  },
+  "keywords": [
+    "react",
+    "mdast",
+    "unist",
+    "remark",
+    "markdown",
+    "editor",
+    "typescript"
+  ],
+  "author": "Gwilyn Saunders",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mdast": "^3.0.3",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/tape": "^4.2.33",
+    "@types/unist": "^2.0.3",
+    "express": "^4.17.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "tape": "^4.11.0",
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "mdast-builder": "^1.1.1",
+    "remark": "^11.0.2",
+    "remark-html": "^10.0.0",
+    "unist-util-find": "^1.0.1"
+  },
+  "peerDependencies": {
+    "react": ">16.8"
+  }
+}
