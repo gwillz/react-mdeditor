@@ -46,7 +46,32 @@ export function Editor(props: Props) {
             <Preview
                 className="remark-editor-preview markdown"
                 value={props.value}
+                plugins={[links({dead: false})]}
             />
         </div>
     )
+}
+
+import { Node } from 'unist';
+import { VFile } from 'vfile';
+import visit from 'unist-util-visit';
+
+
+type LinkProps = {
+    dead?: boolean;
+}
+
+type Next = (error: Error | null, tree: Node, file: VFile) => void;
+
+function links(props: LinkProps) {
+    return () => plugin;
+    
+    function plugin(tree: Node, type: VFile) {
+        return new Promise<Node>((resolve, reject) => {
+            visit(tree, "link", node => {
+                node.
+            })
+            resolve();
+        })
+    }
 }

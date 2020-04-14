@@ -44,8 +44,10 @@
   },
   "dependencies": {
     "mdast-builder": "^1.1.1",
+    "react-markdown": "^4.2.2",
     "remark": "^11.0.2",
     "remark-html": "^10.0.0",
+    "remark-react": "^6.0.0",
     "unist-util-find": "^1.0.1"
   },
   "peerDependencies": {

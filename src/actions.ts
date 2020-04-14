@@ -78,7 +78,7 @@ export function doAction(action: Action, tree: Root, start: number, end: number)
             case "heading":
                 return toggleHeading(tree, start);
             case "anchor":
-                return toggleAnchor(tree, start);
+                return toggleDefAnchor(tree, start);
             case "image":
                 return toggleImage(tree, start);
             case "separator":
